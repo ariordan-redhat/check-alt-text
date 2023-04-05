@@ -1,6 +1,6 @@
 # check-alt-text.sh
 
-This script file searches all asciidoc files for instances of `xref`, 'image' and 'link'.
+This script file searches all asciidoc files for instances of `xref`, `image` and `link`.
 
 To execute the script, navigate to your docs repo and run the following command:
 
