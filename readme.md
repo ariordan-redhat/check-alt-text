@@ -29,5 +29,4 @@ When imported into an application that displays CSV files, the content is displa
 
 | Path to file | line number | type | alt text |
 | ------------ | ----------- | ---- | -------- |
-
-| ./platform/requirements.adoc | 15 |  xref | ref-schedule-jobs-worker-nodes[Jobs scheduled on the worker nodes] |
+| ./platform/requirements.adoc | 15 |  xref | worker-nodes[Jobs scheduled on the worker nodes] |
