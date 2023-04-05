@@ -4,15 +4,30 @@ This script file searches all asciidoc files for instances of `xref`, 'image' an
 
 To execute the script, navigate to your docs repo and run the following command:
 
-  check-alt-text <destination path>
+```
+check-alt-text <destination path>
+```
 
 For example,
 
-  check-alt-text.sh ~/Documents/mydir/aap
+```
+check-alt-text.sh ~/Documents/mydir/my-repo
+```
 
 The output is saved in the following files:
 
-~/Documents/mydir/aap-20230405151259-all-alt-text.csv shows all instances of alt text.
+- ~/Documents/mydir/my-repo-20230405151259-all-alt-text.csv shows all instances of alt text.
+- `~/Documents/mydir/my-repo-20230405151259-empty-alt-text.csv` shows instances where the alt text is missing: `link`, `xref` and `image` are followed by `[]`.
 
-`~/Documents/mydir/aap-20230405151259-empty-alt-text.csv` shows instances where the alt text is missing: `link`, `xref` and `image` are followed by `[]`.
+Example output of a CSV file:
 
+```
+.//platform/ref-container-resource-requirements.adoc,15, xref,ref-schedule-jobs-worker-nodes[Jobs scheduled on the worker nodes]
+```
+
+When imported into an application that displays CSV files, the content is displayed in a table:
+
+| Path to file | line number | type | alt text |
+| ------------ | ----------- | ---- | -------- |
+
+| ./platform/requirements.adoc | 15 |  xref | ref-schedule-jobs-worker-nodes[Jobs scheduled on the worker nodes] |
