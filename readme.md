@@ -33,4 +33,4 @@ When imported into an application that displays CSV files, the content is displa
 | Path to file | line number | type | alt text |
 | ------------ | ----------- | ---- | -------- |
 | ./platform/requirements.adoc | 15 |  xref | worker-nodes[Jobs scheduled on the worker nodes] |
-| ./analytics/proc-add-user.adoc | 14 | image:cog.png[] |
+| ./analytics/proc-add-user.adoc | 14 | image | cog.png[] |
