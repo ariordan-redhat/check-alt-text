@@ -22,7 +22,7 @@ The output is saved in the following files:
 Example output of a CSV file:
 
 ```
-.//platform/ref-container-resource-requirements.adoc,15, xref,ref-schedule-jobs-worker-nodes[Jobs scheduled on the worker nodes]
+.//platform/requirements.adoc,15, xref,worker-nodes[Jobs scheduled on the worker nodes]
 ```
 
 When imported into an application that displays CSV files, the content is displayed in a table:
